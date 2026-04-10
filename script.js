@@ -7,6 +7,14 @@ const articles = [
         description: 'This week in tech: Major advances in AI model training, container orchestration innovations, evolving security landscape, and key software development trends.',
         categories: ['AI', 'DevOps', 'Security', 'Development'],
         url: 'articles/week-14-2026.html'
+    },
+    {
+        id: 'week-13-2026',
+        title: 'Tech Week #13: 2026 - AI Innovation, Development Trends & Infrastructure Updates',
+        date: '2026-03-27',
+        description: 'Last week in tech: Multimodal AI advances, low-code platform growth, edge computing adoption, GitOps standardization, and emerging security patterns.',
+        categories: ['AI', 'Development', 'DevOps', 'Security'],
+        url: 'articles/week-13-2026.html'
     }
 ];
 
