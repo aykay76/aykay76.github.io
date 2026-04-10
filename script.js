@@ -15,6 +15,14 @@ const articles = [
         description: 'Last week in tech: Multimodal AI advances, low-code platform growth, edge computing adoption, GitOps standardization, and emerging security patterns.',
         categories: ['AI', 'Development', 'DevOps', 'Security'],
         url: 'articles/week-13-2026.html'
+    },
+    {
+        id: 'week-12-2026',
+        title: 'Tech Week #12: 2026 - Open Source Growth, Building Better APIs & Cloud Innovation',
+        date: '2026-03-20',
+        description: 'This week in tech: Open source LLM breakthroughs, modern API design patterns, multi-cloud strategies, container security, and privacy regulation impacts.',
+        categories: ['AI', 'Development', 'DevOps', 'Security'],
+        url: 'articles/week-12-2026.html'
     }
 ];
 
