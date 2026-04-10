@@ -1,0 +1,11 @@
+{
+  "name": "tech-weekly-blog",
+  "version": "1.0.0",
+  "description": "AI, Software Development, DevOps & Security weekly news blog",
+  "scripts": {
+    "generate": "node scripts/generate-post.js"
+  },
+  "keywords": ["blog", "ai", "devops", "security", "software-development"],
+  "author": "",
+  "license": "MIT"
+}
