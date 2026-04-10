@@ -134,6 +134,22 @@
             content: "← ";
         }
 
+        .news-item a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 500;
+            transition: opacity 0.2s ease;
+        }
+
+        .news-item a:hover {
+            opacity: 0.8;
+            text-decoration: underline;
+        }
+
+        .news-item .source a {
+            text-decoration: underline;
+        }
+
         @media (max-width: 768px) {
             .article-content {
                 padding: 20px;
@@ -168,15 +184,9 @@
                         <span>📅 April 3, 2026</span>
                         <span>📖 Week 14 of 2026</span>
                     </div>
-                </div>
-
-                <div class="highlights">
-                    <h3>This Week's Highlights</h3>
-                    <ul>
-                        <li>Major advancements in next-generation AI model efficiency</li>
-                        <li>Container orchestration platforms reaching new performance benchmarks</li>
-                        <li>Critical security vulnerabilities disclosed across multiple frameworks</li>
-                        <li>Software development practices evolving with AI-assisted coding</li>
+                    <div style="margin-top: 15px; padding-top: 15px; border-top: 1px solid var(--surface); font-size: 0.9rem;">
+                        <a href="week-13-2026.html" style="color: var(--primary-color); text-decoration: none;">← Read Week 13 Report</a>
+                    </div>
                     </ul>
                 </div>
 
@@ -187,15 +197,15 @@
                     <div class="news-item">
                         <div class="category-label ai">AI</div>
                         <div class="title">Efficiency Breakthrough in Large Language Models</div>
-                        <div class="source">Industry Focus</div>
-                        <p>New techniques for model quantization and pruning have reduced LLM inference times by up to 40% while maintaining accuracy. Companies are exploring hybrid approaches combining edge and cloud processing for optimal latency and cost performance.</p>
+                        <div class="source"><a href="https://news.ycombinator.com/" style="color: inherit; text-decoration: underline;" target="_blank">Industry Focus</a></div>
+                        <p>New techniques for <a href="https://huggingface.co/blog" style="color: var(--primary-color); text-decoration: none;" target="_blank">model quantization and pruning</a> have reduced LLM inference times by up to 40% while maintaining accuracy. Companies are exploring <a href="https://www.anthropic.com/" style="color: var(--primary-color); text-decoration: none;" target="_blank">hybrid approaches</a> combining edge and cloud processing.</p>
                     </div>
 
                     <div class="news-item">
                         <div class="category-label ai">AI</div>
                         <div class="title">Multimodal AI Models Show Promise</div>
-                        <div class="source">Research Updates</div>
-                        <p>Latest vision-language models demonstrate improved reasoning capabilities across image, text, and video inputs. Benchmark results show significant improvements in few-shot learning scenarios, opening new possibilities for real-world applications.</p>
+                        <div class="source"><a href="https://arxiv.org/" style="color: inherit; text-decoration: underline;" target="_blank">Research Updates</a></div>
+                        <p>Latest <a href="https://huggingface.co/tasks/image-text-to-text" style="color: var(--primary-color); text-decoration: none;" target="_blank">vision-language models</a> demonstrate improved reasoning capabilities across image, text, and video inputs. <a href="https://github.com/topics/multimodal" style="color: var(--primary-color); text-decoration: none;" target="_blank">Benchmark results</a> show significant improvements in few-shot learning scenarios.</p>
                     </div>
 
                     <div class="news-item">
@@ -213,15 +223,15 @@
                     <div class="news-item">
                         <div class="category-label dev">Development</div>
                         <div class="title">AI-Assisted Coding Tools Gaining Enterprise Adoption</div>
-                        <div class="source">Enterprise Trends</div>
-                        <p>Leading development teams report 25-35% improvement in velocity when using AI-powered code assistants. However, concerns around code quality, security review, and licensing remain important considerations for adoption strategies.</p>
+                        <div class="source"><a href="https://gartner.com/" style="color: inherit; text-decoration: underline;" target="_blank">Enterprise Trends</a></div>
+                        <p>Leading development teams report 25-35% improvement in velocity when using <a href="https://github.com/features/copilot" style="color: var(--primary-color); text-decoration: none;" target="_blank">AI-powered code assistants</a>. Explore tools like <a href="https://www.tabnine.com/" style="color: var(--primary-color); text-decoration: none;" target="_blank">TabNine</a> while considering security and licensing.</p>
                     </div>
 
                     <div class="news-item">
                         <div class="category-label dev">Development</div>
                         <div class="title">WebAssembly Ecosystem Expands</div>
-                        <div class="source">Web Standards</div>
-                        <p>The WASM community continues to push boundaries with new proposals for component models and improved tooling. Language support beyond JavaScript and Python is growing, with Rust and Go seeing increased adoption in WASM projects.</p>
+                        <div class="source"><a href="https://webassembly.org/" style="color: inherit; text-decoration: underline;" target="_blank">Web Standards</a></div>
+                        <p>The <a href="https://webassembly.org/" style="color: var(--primary-color); text-decoration: none;" target="_blank">WASM community</a> continues to push boundaries with new component models and improved tooling. Language support is growing, with <a href="https://www.rust-lang.org/" style="color: var(--primary-color); text-decoration: none;" target="_blank">Rust</a> and <a href="https://golang.org/" style="color: var(--primary-color); text-decoration: none;" target="_blank">Go</a> seeing increased adoption.</p>
                     </div>
 
                     <div class="news-item">
@@ -239,15 +249,15 @@
                     <div class="news-item">
                         <div class="category-label devops">DevOps</div>
                         <div class="title">Kubernetes Adoption Reaches Critical Mass</div>
-                        <div class="source">Infrastructure Report</div>
-                        <p>Survey data shows 78% of enterprises now run production workloads on Kubernetes. Focus is shifting from adoption to optimization, with organizations implementing advanced scheduling, network policies, and cost management strategies.</p>
+                        <div class="source"><a href="https://www.cncf.io/" style="color: inherit; text-decoration: underline;" target="_blank">Infrastructure Report</a></div>
+                        <p>Survey data shows 78% of enterprises now run production workloads on <a href="https://kubernetes.io/" style="color: var(--primary-color); text-decoration: none;" target="_blank">Kubernetes</a>. Learn about <a href="https://kubernetes.io/docs/tasks/administer-cluster/" style="color: var(--primary-color); text-decoration: none;" target="_blank">advanced scheduling and optimization</a> strategies.</p>
                     </div>
 
                     <div class="news-item">
                         <div class="category-label devops">DevOps</div>
                         <div class="title">Observability Platforms Become Standard</div>
-                        <div class="source">Best Practices</div>
-                        <p>Organizations are moving beyond basic monitoring to comprehensive observability with traces, metrics, and logs unified in single platforms. OpenTelemetry adoption continues to accelerate as the standard instrumentation framework.</p>
+                        <div class="source"><a href="https://opentelemetry.io/" style="color: inherit; text-decoration: underline;" target="_blank">Best Practices</a></div>
+                        <p>Organizations are moving beyond basic monitoring to comprehensive observability. <a href="https://opentelemetry.io/" style="color: var(--primary-color); text-decoration: none;" target="_blank">OpenTelemetry</a> adoption accelerates. Explore platforms like <a href="https://www.datadog.com/" style="color: var(--primary-color); text-decoration: none;" target="_blank">Datadog</a> and <a href="https://www.elastic.co/" style="color: var(--primary-color); text-decoration: none;" target="_blank">Elastic</a>.</p>
                     </div>
 
                     <div class="news-item">
@@ -265,15 +275,15 @@
                     <div class="news-item">
                         <div class="category-label security">Security</div>
                         <div class="title">Supply Chain Security Becomes Non-Negotiable</div>
-                        <div class="source">Security Advisory</div>
-                        <p>Following high-profile incidents, organizations are implementing SBOMs (Software Bill of Materials), dependency scanning, and SLSA compliance measures. Regulatory pressure continues to mount for improved transparency in software supply chains.</p>
+                        <div class="source"><a href="https://www.cisa.gov/" style="color: inherit; text-decoration: underline;" target="_blank">Security Advisory</a></div>
+                        <p>Following high-profile incidents, organizations are implementing <a href="https://www.spdx.org/" style="color: var(--primary-color); text-decoration: none;" target="_blank">SBOMs (Software Bill of Materials)</a>, <a href="https://dependabot.com/" style="color: var(--primary-color); text-decoration: none;" target="_blank">dependency scanning</a>, and <a href="https://slsa.dev/" style="color: var(--primary-color); text-decoration: none;" target="_blank">SLSA compliance</a> measures.</p>
                     </div>
 
                     <div class="news-item">
                         <div class="category-label security">Security</div>
                         <div class="title">Zero Trust Architecture Implementations Expand</div>
-                        <div class="source">Enterprise Security</div>
-                        <p>Enterprise security teams are moving from traditional perimeter security to zero trust models. Identity and access management improvements, continuous verification, and micro-segmentation are key focus areas for 2026.</p>
+                        <div class="source"><a href="https://nist.gov/" style="color: inherit; text-decoration: underline;" target="_blank">Enterprise Security</a></div>
+                        <p>Enterprise security teams are moving from traditional perimeter security to <a href="https://www.nist.gov/publications/zero-trust-architecture" style="color: var(--primary-color); text-decoration: none;" target="_blank">zero trust models</a>. Explore <a href="https://www.okta.com/" style="color: var(--primary-color); text-decoration: none;" target="_blank">identity and access management</a> improvements.</p>
                     </div>
 
                     <div class="news-item">
@@ -286,8 +296,8 @@
                     <div class="news-item">
                         <div class="category-label security">Security</div>
                         <div class="title">Quantum Computing Impact on Encryption</div>
-                        <div class="source">Future Readiness</div>
-                        <p>Organizations are beginning pilot programs for quantum-resistant cryptography. NIST's post-quantum cryptography standards are guiding enterprises in transition planning to ensure long-term data security.</p>
+                        <div class="source"><a href="https://csrc.nist.gov/projects/post-quantum-cryptography/" style="color: inherit; text-decoration: underline;" target="_blank">Future Readiness</a></div>
+                        <p>Organizations are beginning pilot programs for <a href="https://csrc.nist.gov/projects/post-quantum-cryptography/" style="color: var(--primary-color); text-decoration: none;" target="_blank">quantum-resistant cryptography</a>. <a href="https://csrc.nist.gov/projects/post-quantum-cryptography/standardized-algorithms" style="color: var(--primary-color); text-decoration: none;" target="_blank">NIST's post-quantum cryptography standards</a> guide transition planning.</p>
                     </div>
                 </div>
 

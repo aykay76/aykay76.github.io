@@ -128,6 +128,22 @@
             font-size: 0.95rem;
         }
 
+        .news-item a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 500;
+            transition: opacity 0.2s ease;
+        }
+
+        .news-item a:hover {
+            opacity: 0.8;
+            text-decoration: underline;
+        }
+
+        .news-item .source a {
+            text-decoration: underline;
+        }
+
         .back-link {
             display: inline-block;
             margin-bottom: 30px;
@@ -153,6 +169,9 @@
                         <span>📅 Week of March 27, 2026</span>
                         <span>🔗 AI • Development • DevOps • Security</span>
                     </div>
+                    <div style="margin-top: 15px; padding-top: 15px; border-top: 1px solid var(--surface); font-size: 0.9rem;">
+                        <a href="week-14-2026.html" style="color: var(--primary-color); text-decoration: none;">→ Read Week 14 Report</a>
+                    </div>
                 </div>
 
                 <!-- AI Section -->
@@ -161,14 +180,14 @@
                     <div class="news-item ai">
                         <div class="category-label ai">AI</div>
                         <div class="title">Multimodal AI Systems Gain Momentum</div>
-                        <div class="source">Research Breakthrough</div>
-                        <p>New developments in multimodal AI continue to push capabilities forward. Systems now combine vision, language, and audio processing in unified models with improved efficiency and reduced computational overhead.</p>
+                        <div class="source"><a href="https://news.ycombinator.com/" style="color: inherit; text-decoration: underline;" target="_blank">Research Breakthrough</a></div>
+                        <p>New developments in multimodal <a href="https://huggingface.co/" style="color: var(--primary-color); text-decoration: none;" target="_blank">AI models</a> continue to push capabilities forward. Systems now combine vision, language, and audio processing in unified models with improved efficiency and reduced computational overhead. See also: <a href="https://openai.com/" style="color: var(--primary-color); text-decoration: none;" target="_blank">Advanced AI Research</a></p>
                     </div>
                     <div class="news-item ai">
                         <div class="category-label ai">AI</div>
                         <div class="title">Open-Source AI Models Democratize Access</div>
-                        <div class="source">Community Initiative</div>
-                        <p>The open-source community releases increasingly capable foundation models, reducing barriers to entry for researchers and developers. Competition drives innovation across all major frameworks.</p>
+                        <div class="source"><a href="https://github.com/" style="color: inherit; text-decoration: underline;" target="_blank">Community Initiative</a></div>
+                        <p>The <a href="https://github.com/topics/open-source" style="color: var(--primary-color); text-decoration: none;" target="_blank">open-source community</a> releases increasingly capable foundation models, reducing barriers to entry for researchers and developers. Explore projects on <a href="https://huggingface.co/models" style="color: var(--primary-color); text-decoration: none;" target="_blank">Hugging Face</a> and <a href="https://ollama.ai/" style="color: var(--primary-color); text-decoration: none;" target="_blank">Ollama</a>.</p>
                     </div>
                     <div class="news-item ai">
                         <div class="category-label ai">AI</div>
@@ -184,8 +203,8 @@
                     <div class="news-item dev">
                         <div class="category-label dev">Development</div>
                         <div class="title">Low-Code Platforms Show Strong Growth</div>
-                        <div class="source">Industry Analysis</div>
-                        <p>Low-code and no-code platforms continue to mature, enabling faster development cycles for enterprise applications. Integration capabilities with traditional development workflows improve.</p>
+                        <div class="source"><a href="https://forrester.com/" style="color: inherit; text-decoration: underline;" target="_blank">Industry Analysis</a></div>
+                        <p><a href="https://www.mendix.com/" style="color: var(--primary-color); text-decoration: none;" target="_blank">Low-code and no-code platforms</a> continue to mature, enabling faster development cycles for enterprise applications. Popular platforms like <a href="https://www.microsoft.com/power-platform" style="color: var(--primary-color); text-decoration: none;" target="_blank">Power Apps</a> improve integration capabilities with traditional development workflows.</p>
                     </div>
                     <div class="news-item dev">
                         <div class="category-label dev">Development</div>
@@ -207,14 +226,14 @@
                     <div class="news-item devops">
                         <div class="category-label devops">DevOps</div>
                         <div class="title">Edge Computing Adoption Grows</div>
-                        <div class="source">Infrastructure Trends</div>
-                        <p>Organizations push computation and data processing to the edge. New deployment patterns optimize for distributed systems with improved latency and reduced bandwidth requirements.</p>
+                        <div class="source"><a href="https://www.redhat.com/" style="color: inherit; text-decoration: underline;" target="_blank">Infrastructure Trends</a></div>
+                        <p>Organizations push computation and data processing to the edge. Learn about <a href="https://www.cloudflare.com/learning/serverless/edge-computing/" style="color: var(--primary-color); text-decoration: none;" target="_blank">edge computing architecture</a> and explore platforms like <a href="https://www.cloudflare.com/workers/" style="color: var(--primary-color); text-decoration: none;" target="_blank">Cloudflare Workers</a>.</p>
                     </div>
                     <div class="news-item devops">
                         <div class="category-label devops">DevOps</div>
                         <div class="title">GitOps Becomes Industry Standard</div>
-                        <div class="source">DevOps Operations</div>
-                        <p>GitOps practices solidify as the preferred approach for infrastructure and application management. Version control as the source of truth simplifies deployments and rollbacks.</p>
+                        <div class="source"><a href="https://www.gitops.tech/" style="color: inherit; text-decoration: underline;" target="_blank">DevOps Operations</a></div>
+                        <p><a href="https://www.gitops.tech/" style="color: var(--primary-color); text-decoration: none;" target="_blank">GitOps practices</a> solidify as the preferred approach for infrastructure and application management. Explore tools like <a href="https://argoproj.github.io/cd/" style="color: var(--primary-color); text-decoration: none;" target="_blank">ArgoCD</a> and <a href="https://fluxcd.io/" style="color: var(--primary-color); text-decoration: none;" target="_blank">Flux</a>.</p>
                     </div>
                     <div class="news-item devops">
                         <div class="category-label devops">DevOps</div>
@@ -230,14 +249,14 @@
                     <div class="news-item security">
                         <div class="category-label security">Security</div>
                         <div class="title">Zero-Trust Architecture Adoption Accelerates</div>
-                        <div class="source">Security Best Practices</div>
-                        <p>Zero-trust security models move from concept to implementation across enterprises. Continuous verification and micro-segmentation become fundamental to network strategy.</p>
+                        <div class="source"><a href="https://csrc.nist.gov/" style="color: inherit; text-decoration: underline;" target="_blank">Security Best Practices</a></div>
+                        <p><a href="https://www.nist.gov/publications/zero-trust-architecture" style="color: var(--primary-color); text-decoration: none;" target="_blank">Zero-trust security models</a> move from concept to implementation across enterprises. Read NIST guidelines and explore tools like <a href="https://www.cloudflare.com/zero-trust/" style="color: var(--primary-color); text-decoration: none;" target="_blank">Cloudflare Zero Trust</a>.</p>
                     </div>
                     <div class="news-item security">
                         <div class="category-label security">Security</div>
                         <div class="title">Supply Chain Security Regulations Expand</div>
-                        <div class="source">Compliance & Standards</div>
-                        <p>New regulatory requirements focus on software supply chain security. Organizations implement enhanced dependency scanning, SBOM generation, and vulnerability tracking.</p>
+                        <div class="source"><a href="https://slsa.dev/" style="color: inherit; text-decoration: underline;" target="_blank">Compliance & Standards</a></div>
+                        <p>New regulatory requirements focus on <a href="https://slsa.dev/" style="color: var(--primary-color); text-decoration: none;" target="_blank">software supply chain security</a>. Organizations implement tools like <a href="https://www.spdx.org/" style="color: var(--primary-color); text-decoration: none;" target="_blank">SBOM generation</a> and enhance dependency scanning.</p>
                     </div>
                     <div class="news-item security">
                         <div class="category-label security">Security</div>
