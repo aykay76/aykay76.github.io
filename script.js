@@ -1,6 +1,15 @@
 // Article data structure
 const articles = [
     {
+        id: 'week-42-2026',
+        title: 'Tech Week #42: 2026 - AI, Development, DevOps & Security News',
+        date: '2026-10-18',
+        description: 'This week in tech: Major advances in AI, software development trends, DevOps innovations, and security updates.',
+        categories: ['AI', 'Development', 'DevOps', 'Security'],
+        url: 'articles/week-42-2026.html'
+    },
+
+    {
         id: 'week-41-2026',
         title: 'Tech Week #41: 2026 - AI, Development, DevOps & Security News',
         date: '2026-10-11',
@@ -267,6 +276,7 @@ const articles = [
         categories: ['AI', 'Development', 'DevOps', 'Security'],
         url: 'articles/week-12-2026.html'
     }
+
 
 
 
